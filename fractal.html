@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractal Tree</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #canvas1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+        .randomize {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            outline: none;
+            border: none;
+            z-index: 10;
+            border-radius: 50px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <canvas id="canvas1"></canvas>
+    <button class="randomize">Reproduce Tree</button>
+
+    <script src="fractal.js"></script>
+</body>
+</html>
